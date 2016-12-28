@@ -11,6 +11,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'digitaltoad/vim-pug'
 call vundle#end()
 
 filetype plugin indent on
