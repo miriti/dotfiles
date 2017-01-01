@@ -38,3 +38,4 @@ map <Down> <NOP>
 
 set splitbelow
 set splitright
+set wildignore+=*/node_modules/*
