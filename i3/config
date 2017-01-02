@@ -6,6 +6,12 @@ floating_modifier $mod
 
 bindsym $mod+Return exec i3-sensible-terminal
 
+# Print Screen will run scrot
+bindsym Print exec "scrot"
+
+# mod+Print Screen will run shutter in selection mode
+bindsym $mod+Print exec "shutter -s"
+
 bindsym $mod+Shift+q kill
 
 bindsym $mod+d exec dmenu_run
