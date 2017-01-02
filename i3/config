@@ -100,3 +100,4 @@ hide_edge_borders both
 
 exec "compton -b"
 exec "setxkbmap -layout us,ru -option grp:win_space_toggle"
+exec "dropbox &"
