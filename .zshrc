@@ -88,4 +88,7 @@ if [ "$OS" = "Darwin" ]; then
     alias ls="ls -lahG"
 else
     alias ls="ls -lah --color"
+    alias open="xdg-open"
+    alias off="systemctl poweroff"
+    alias reboot="systemctl reboot"
 fi

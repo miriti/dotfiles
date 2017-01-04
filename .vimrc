@@ -18,6 +18,7 @@ filetype plugin indent on
 syntax on
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
+set completeopt=menu
 set nu
 set tabstop=2
 set shiftwidth=2
@@ -31,10 +32,15 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+nnoremap <Space> @q
+
 map <Left> <NOP> 
 map <Right> <NOP> 
 map <Up> <NOP> 
 map <Down> <NOP> 
+
+map <C-n> :NERDTreeToggle<CR> 
 
 set splitbelow
 set splitright
