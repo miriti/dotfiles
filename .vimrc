@@ -35,12 +35,12 @@ nnoremap <C-H> <C-W><C-H>
 
 nnoremap <Space> @q
 
-map <Left> <NOP> 
-map <Right> <NOP> 
-map <Up> <NOP> 
-map <Down> <NOP> 
+map <Left> <NOP>
+map <Right> <NOP>
+map <Up> <NOP>
+map <Down> <NOP>
 
-map <C-n> :NERDTreeToggle<CR> 
+map <C-n> :NERDTreeToggle<CR>
 
 set splitbelow
 set splitright
