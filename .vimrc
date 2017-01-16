@@ -13,6 +13,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'digitaltoad/vim-pug'
 Plugin 'farseer90718/vim-taskwarrior'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 call vundle#end()
 
 filetype plugin indent on
