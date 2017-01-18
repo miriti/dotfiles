@@ -48,3 +48,5 @@ map <C-n> :NERDTreeToggle<CR>
 set splitbelow
 set splitright
 set wildignore+=*/node_modules/*
+
+let g:airline#extensions#tabline#enabled = 1
