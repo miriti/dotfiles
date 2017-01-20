@@ -94,3 +94,4 @@ else
 fi
 
 alias fif='grep -rnw . -e '
+export EDITOR=vim
