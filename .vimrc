@@ -12,9 +12,9 @@ Plugin 'jlanzarotta/bufexplorer'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'digitaltoad/vim-pug'
-Plugin 'farseer90718/vim-taskwarrior'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'mattn/emmet-vim'
 call vundle#end()
 
 filetype plugin indent on
@@ -50,3 +50,4 @@ set splitright
 set wildignore+=*/node_modules/*
 
 let g:airline#extensions#tabline#enabled = 1
+let g:user_emmet_mode='a' 
