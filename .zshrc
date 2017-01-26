@@ -92,3 +92,6 @@ else
     alias off="systemctl poweroff"
     alias reboot="systemctl reboot"
 fi
+
+alias fif='grep -rnw . -e '
+export EDITOR=vim

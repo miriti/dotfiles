@@ -12,6 +12,9 @@ Plugin 'jlanzarotta/bufexplorer'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'digitaltoad/vim-pug'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'mattn/emmet-vim'
 call vundle#end()
 
 filetype plugin indent on
@@ -35,13 +38,16 @@ nnoremap <C-H> <C-W><C-H>
 
 nnoremap <Space> @q
 
-map <Left> <NOP> 
-map <Right> <NOP> 
-map <Up> <NOP> 
-map <Down> <NOP> 
+map <Left> <NOP>
+map <Right> <NOP>
+map <Up> <NOP>
+map <Down> <NOP>
 
-map <C-n> :NERDTreeToggle<CR> 
+map <C-n> :NERDTreeToggle<CR>
 
 set splitbelow
 set splitright
 set wildignore+=*/node_modules/*,*/lib/*,*/bower_components/*
+
+let g:airline#extensions#tabline#enabled = 1
+let g:user_emmet_mode='a' 
