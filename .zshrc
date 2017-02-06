@@ -91,6 +91,7 @@ else
     alias open="xdg-open"
     alias off="systemctl poweroff"
     alias reboot="systemctl reboot"
+    alias feh="feh --scale-down --auto-zoom"
 fi
 
 alias fif='grep -rnw . -e '
