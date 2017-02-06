@@ -86,6 +86,7 @@ source $ZSH/oh-my-zsh.sh
 OS=$(uname)
 if [ "$OS" = "Darwin" ]; then
     alias ls="ls -lahG"
+    export LC_ALL=en_US.UTF-8
 else
     alias ls="ls -lah --color"
     alias open="xdg-open"
@@ -94,4 +95,5 @@ else
 fi
 
 alias fif='grep -rnw . -e '
+alias task='clear ; task'
 export EDITOR=vim
