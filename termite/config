@@ -2,5 +2,5 @@
 font = Droid Sans Mono 10
 
 [colors]
-background = #1c2023
+background = rgba(28, 32, 35, 0.8)
 foreground = #c7ccd1

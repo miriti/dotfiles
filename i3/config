@@ -4,6 +4,9 @@ font pango:Droid Sans Mono 8
 
 floating_modifier $mod
 
+for_window [class="^.*"] border pixel 1
+new_window 1pixel
+
 bindsym $mod+Return exec i3-sensible-terminal
 
 # Print Screen will run scrot
