@@ -15,6 +15,9 @@ Plugin 'digitaltoad/vim-pug'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'mattn/emmet-vim'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'Quramy/tsuquyomi'
+Plugin 'Shougo/vimproc.vim'
 call vundle#end()
 
 filetype plugin indent on
