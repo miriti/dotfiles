@@ -17,7 +17,7 @@ bindsym $mod+Print exec "shutter -s"
 
 bindsym $mod+Shift+q kill
 
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec dmenu_run -fn 'Droid Sans Mono-9'
 
 bindsym $mod+h focus left
 bindsym $mod+j focus down

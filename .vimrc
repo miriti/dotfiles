@@ -48,6 +48,9 @@ map <Down> <NOP>
 
 map <C-n> :NERDTreeToggle<CR>
 
+nmap <Left> gT
+nmap <Right> gt
+
 set splitbelow
 set splitright
 set wildignore+=*/node_modules/*,*/lib/*,*/bower_components/*
