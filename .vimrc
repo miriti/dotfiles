@@ -18,6 +18,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'Quramy/tsuquyomi'
 Plugin 'Shougo/vimproc.vim'
+Plugin 'dkprice/vim-easygrep'
 call vundle#end()
 
 filetype plugin indent on
