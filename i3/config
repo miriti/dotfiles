@@ -10,10 +10,10 @@ new_window 1pixel
 bindsym $mod+Return exec i3-sensible-terminal
 
 # Print Screen will run scrot
-bindsym Print exec "scrot"
+bindsym --release Print exec "scrot"
 
-# mod+Print Screen will run shutter in selection mode
-bindsym $mod+Print exec "shutter -s"
+# Shift+Print screen will run deepin-screenshot
+bindsym --release Shift+Print exec "deepin-screenshot"
 
 bindsym $mod+Shift+q kill
 
