@@ -50,6 +50,7 @@ map <Up> <NOP>
 map <Down> <NOP>
 
 map <C-n> :NERDTreeToggle<CR>
+nnoremap <silent> <F8> :TlistToggle<CR>
 
 nmap <Left> gT
 nmap <Right> gt
@@ -60,3 +61,5 @@ set wildignore+=*/node_modules/*,*/lib/*,*/bower_components/*
 
 let g:airline#extensions#tabline#enabled = 1
 let g:user_emmet_mode='a'
+
+let Tlist_Use_Right_Window   = 1
