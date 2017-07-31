@@ -13,7 +13,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym --release Print exec "scrot"
 
 # Shift+Print screen will run deepin-screenshot
-bindsym --release Shift+Print exec "deepin-screenshot"
+bindsym --release Shift+Print exec "deepin-screenshot && setxkbmap -layout us,ru -option grp:win_space_toggle"
 
 bindsym $mod+Shift+q kill
 
@@ -107,6 +107,7 @@ bar {
 
 hide_edge_borders both
 
+exec "git -C ~/dotfiles"
 exec "compton -b"
 exec "setxkbmap -layout us,ru -option grp:win_space_toggle"
 exec "dropbox &"
