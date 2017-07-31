@@ -63,3 +63,5 @@ let g:airline#extensions#tabline#enabled = 1
 let g:user_emmet_mode='a'
 
 let Tlist_Use_Right_Window   = 1
+
+let g:ctrlp_show_hidden = 1
