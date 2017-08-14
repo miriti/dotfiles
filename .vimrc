@@ -22,6 +22,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-scripts/taglist.vim'
+Plugin 'vim-scripts/TaskList.vim'
 Plugin 'VundleVim/Vundle.vim'
 call vundle#end()
 
@@ -65,3 +66,5 @@ let g:airline#extensions#tabline#enabled = 1
 let g:user_emmet_mode='a'
 
 let Tlist_Use_Right_Window   = 1
+
+let g:ctrlp_show_hidden = 1
