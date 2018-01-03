@@ -97,4 +97,5 @@ fi
 
 alias fif='grep -rnw . -e '
 alias task='clear ; task'
+alias say='f() { echo $@ ; (echo $@ | festival --tts) }; f'
 export EDITOR=vim
