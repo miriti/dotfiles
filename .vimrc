@@ -1,9 +1,12 @@
+scriptencoding utf-8
+set encoding=utf-8
 set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'airblade/vim-gitgutter'
+Plugin 'blindFS/vim-taskwarrior'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'digitaltoad/vim-pug'
 Plugin 'dkprice/vim-easygrep'
@@ -20,6 +23,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-scripts/taglist.vim'
+Plugin 'vim-scripts/TaskList.vim'
 Plugin 'VundleVim/Vundle.vim'
 call vundle#end()
 
