@@ -69,3 +69,7 @@ let g:user_emmet_mode='a'
 let Tlist_Use_Right_Window   = 1
 
 let g:ctrlp_show_hidden = 1
+set colorcolumn=80
+highlight ColorColumn ctermbg=0 guibg=lightgrey
+
+set backspace=2 " make backspace work like most other programs
