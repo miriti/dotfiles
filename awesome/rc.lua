@@ -44,7 +44,7 @@ end
 beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "xterm"
+terminal = "termite"
 editor = os.getenv("EDITOR") or "nano"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -53,7 +53,7 @@ editor_cmd = terminal .. " -e " .. editor
 -- If you do not like this or do not have such a key,
 -- I suggest you to remap Mod4 to another key using xmodmap or other tools.
 -- However, you can use another modifier like Mod1, but it may interact with others.
-modkey = "Mod4"
+modkey = "Alt"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
