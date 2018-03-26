@@ -85,7 +85,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 OS=$(uname)
 if [ "$OS" = "Darwin" ]; then
-    alias ls="ls -lahG"
+    alias ls="ls -lAhG"
     export LC_ALL=en_US.UTF-8
 else
     alias ls="ls -lah --color"
