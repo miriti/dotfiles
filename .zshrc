@@ -96,6 +96,7 @@ else
 fi
 
 alias fif='grep -rnw . -e '
-alias task='clear ; task'
 alias say='f() { echo $@ ; (echo $@ | festival --tts) }; f'
+alias bgrnd="feh --bg-fill --randomize '/home/michael/Dropbox/desktop/'"
+alias task="clear ; task $@"
 export EDITOR=vim

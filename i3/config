@@ -8,12 +8,10 @@ for_window [class="^.*"] border pixel 1
 new_window 1pixel
 
 bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Shift+Return exec i3-msg open
 
-# Print Screen will run scrot
 bindsym --release Print exec "scrot"
-
-# Shift+Print screen will run deepin-screenshot
-bindsym --release Shift+Print exec "deepin-screenshot && setxkbmap -layout us,ru -option grp:win_space_toggle"
+bindsym --release Shift+Print exec "shutter -s"
 
 bindsym $mod+Shift+q kill
 
@@ -83,9 +81,14 @@ bindsym $mod+minus scratchpad show
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-bindsym XF86AudioLowerVolume exec --no-startup-id pulseaudio-ctl down
-bindsym XF86AudioRaiseVolume exec --no-startup-id pulseaudio-ctl up
-bindsym XF86AudioMute exec --no-startup-id pulseaudio-ctl mute
+bindsym XF86AudioLowerVolume exec --no-startup-id pulseaudio-ctl down && pkill -RTMIN+1 i3blocks
+bindsym XF86AudioRaiseVolume exec --no-startup-id pulseaudio-ctl up && pkill -RTMIN+1 i3blocks
+bindsym XF86AudioMute exec --no-startup-id pulseaudio-ctl mute && pkill -RTMIN+1 i3blocks
+
+bindsym XF86AudioPlay exec --no-startup-id mpc toggle
+bindsym XF86AudioStop exec --no-startup-id mpc stop
+bindsym XF86AudioNext exec --no-startup-id mpc next
+bindsym XF86AudioPrev exec --no-startup-id mpc prev
 
 mode "resize" {
       bindsym j resize shrink width 10 px or 10 ppt
@@ -104,18 +107,26 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+
 bar {
-        status_command i3status
+    status_command i3blocks
+    i3bar_command  i3bar -t
+    height 18
+    separator_symbol " / "
 }
 
 hide_edge_borders both
 
-exec --no-startup-id "git -C ~/dotfiles pull"
 exec --no-startup-id "compton -b"
+exec --no-startup-id "mpd; mpdscribble; mpc clear; mpc listall | shuf -n 300 | mpc add; mpc play"
 exec --no-startup-id "setxkbmap -layout us,ru -option grp:win_space_toggle"
 exec --no-startup-id "dropbox &"
 exec --no-startup-id "feh --bg-fill --randomize '/home/michael/Dropbox/desktop/'"
-exec --no-startup-id "i3-msg 'workspace 1; append_layout workspace-1.json'"
+exec --no-startup-id "shutter --min_at_startup"
+exec --no-startup-id "guake"
 exec "google-chrome-stable"
-exec "telegram-desktop"
-exec "termite"
+exec "telegram-desktop -startintray"
+
+gaps inner 20
+gaps outer 5
+smart_gaps on
