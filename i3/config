@@ -1,4 +1,4 @@
-set $mod Mod1
+set $mod Mod4
 
 font pango:Droid Sans Mono 8 
 
@@ -6,6 +6,7 @@ floating_modifier $mod
 
 for_window [class="^.*"] border pixel 1
 new_window 1pixel
+
 
 bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+Return exec i3-msg open
@@ -112,21 +113,22 @@ bar {
     status_command i3blocks
     i3bar_command  i3bar -t
     height 18
-    separator_symbol " / "
+    separator_symbol " ᛫ "
 }
 
 hide_edge_borders both
 
 exec --no-startup-id "compton -b"
-exec --no-startup-id "mpd; mpdscribble; mpc clear; mpc listall | shuf -n 300 | mpc add; mpc play"
+# exec --no-startup-id "mpd; mpdscribble; mpc clear; mpc listall | shuf -n 300 | mpc add; mpc play"
+exec --no-startup-id "mpd; mpdscribble"
 exec --no-startup-id "setxkbmap -layout us,ru -option grp:win_space_toggle"
 exec --no-startup-id "dropbox &"
 exec --no-startup-id "feh --bg-fill --randomize '/home/michael/Dropbox/desktop/'"
-exec --no-startup-id "shutter --min_at_startup"
 exec --no-startup-id "guake"
-exec "google-chrome-stable"
-exec "telegram-desktop -startintray"
+exec --no-startup-id "flameshot"
+exec --no-startup-id "telegram-desktop &"
+exec --no-startup-id "google-chrome-stable"
 
 gaps inner 20
 gaps outer 5
-smart_gaps on
+# smart_gaps off

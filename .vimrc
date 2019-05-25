@@ -33,7 +33,8 @@ Plugin 'Valloric/YouCompleteMe'
 " Plugin 'vim-scripts/taglist.vim'
 " Plugin 'vim-scripts/TaskList.vim'
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'jiangmiao/auto-pairs'
+" Plugin 'jiangmiao/auto-pairs'
+Plugin 'wakatime/vim-wakatime'
 call vundle#end()
 
 filetype plugin indent on

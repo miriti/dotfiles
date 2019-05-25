@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/opt/flutter/bin:$PATH
 
 # Path to your oh-my-zsh installation.
   export ZSH=~/.oh-my-zsh
@@ -100,3 +101,4 @@ alias say='f() { echo $@ ; (echo $@ | festival --tts) }; f'
 alias bgrnd="feh --bg-fill --randomize '/home/michael/Dropbox/desktop/'"
 alias task="clear ; task $@"
 export EDITOR=vim
+export LC_CTYPE="en_US.UTF-8"
